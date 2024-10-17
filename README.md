@@ -37,7 +37,10 @@ Open the TestRunner.java class and Run the Test file.
 
 **Test Case Overview**
 TC_01 - This scenario focuses on the login which then leads to the Homepage
+
 TC_02 - This scenario focus on the 2024 Elections page which is a sub module in U.S page
+
 TC_03 - This scenario has the focus on Canada region under world news module.
+
 TC_04 - This scenario has the functionality of Searching "Climate", inside the search box and to wait for the result.
 
