@@ -29,7 +29,7 @@ Eclipse IDE or any other IDE
 Installation
 
 **Clone the repository**
-git clone - https://github.com/
+git clone - https://github.com/ChrisiiKeys/NYTimes.git
 
 **Running the Tests**
 
