@@ -36,6 +36,7 @@ Navigate to src/test/java and open the org.runner package.
 Open the TestRunner.java class and Run the Test file.
 
 **Test Case Overview**
+
 TC_01 - This scenario focuses on the login which then leads to the Homepage
 
 TC_02 - This scenario focus on the 2024 Elections page which is a sub module in U.S page
