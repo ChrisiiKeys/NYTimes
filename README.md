@@ -1,3 +1,5 @@
+**Overview**
+
 The project NYTimes automates the Newyork Times news webpage, using Selenium & Cucumber Framework. Here, I've covered the major scenario of Automation cases like Navigating the Elections page, Searching a context & Login. The project is structured with Selenium Webdriver for Automation of webpage, Cucumber framework for runner class with Step definition & Feature file for scenarios. The project is integrated with Maven as build tool, provides dependencies & library plugins for report generation.The test file supports cross-browser testing to test the cases in different browsers, data-driven with Excel and generates html reports for test run. For Configuration, pom.xml is used & Base class is used to ensure all the necessary functions are under one class file, which is inherited to all the other classes. 
 
 **Technologies Used**
