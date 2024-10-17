@@ -1,4 +1,25 @@
-The project is built on Cucumber framework
-It contains Test Runner File, Step definition, Feature file.
-You can execute the code from Runner file
-There'll be 4 test Scenarios, which covers the Login functionality, US Election, Canada News articles & Searching for Climate with Search box.
+The project NYTimes automates the Newyork Times news webpage, using Selenium & Cucumber Framework. Here, I've covered the major scenario of Automation cases like Navigating the Elections page, Searching a context & Login. The project is structured with Selenium Webdriver for Automation of webpage, Cucumber framework for runner class with Step definition & Feature file for scenarios. The project is integrated with Maven as build tool, provides dependencies & library plugins for report generation.The test file supports cross-browser testing to test the cases in different browsers, data-driven with Excel and generates html reports for test run. For Configuration, pom.xml is used & Base class is used to ensure all the necessary functions are under one class file, which is inherited to all the other classes. 
+
+Technologies Used
+
+Framework : Data Driven Framework
+Design Pattern: Page Object Model with Factory Design Pattern , Base class with Object Repository, Runner file for Execution, Step definion for defining the steps with feature file.
+Selenium WebDriver: For browser automation.
+Cucumber: For organizing and running test cases.
+Maven: For dependency management , Project life cycle and build automation.
+Java: Primary programming language.
+Web interactions: HTML, CSS, JavaScript, Xpath
+
+Project Structure
+IDE : Eclipse
+src/main/java contains all the packages of Factory and Framework Configs, Object repository, data providers, drivers,annotations, utilities.
+src/main/resources contains Config Properties file.
+src/test/java contains Test Base class, Test classes, Runner class, Step Definition
+src/test/resources contains Test Data file , Feature File, Report, Screenshots
+pom.xml is a Maven project file for managing dependencies.
+
+Running the Tests
+
+Open the Project folder in Git
+Navigate to src/test/java and open the org.runner package.
+Open the TestRunner.java class file and Run the class.
