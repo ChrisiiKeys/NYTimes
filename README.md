@@ -5,20 +5,31 @@ The project NYTimes automates the Newyork Times news webpage, using Selenium & C
 **Technologies Used**
 
 Framework : Data Driven Framework
+
 Design Pattern: Page Object Model with Factory Design Pattern , Base class with Object Repository, Runner file for Execution, Step definion for defining the steps with feature file.
+
 Selenium WebDriver: For browser automation.
+
 Cucumber: For organizing and running test cases.
+
 Maven: For dependency management , Project life cycle and build automation.
+
 Java: Primary programming language.
+
 Web interactions: HTML, CSS, JavaScript, Xpath
 
 **Project Structure**
 
 IDE : Eclipse
+
 src/main/java contains all the packages of Factory and Framework Configs, Object repository, data providers, drivers,annotations, utilities.
+
 src/main/resources contains Config Properties file.
+
 src/test/java contains Test Base class, Test classes, Runner class, Step Definition
+
 src/test/resources contains Test Data file , Feature File, Report, Screenshots
+
 pom.xml is a Maven project file for managing dependencies.
 
 **Pre-requisites**
@@ -30,6 +41,18 @@ Installation
 
 **Clone the repository**
 git clone - https://github.com/ChrisiiKeys/NYTimes.git
+
+**Running Tests using CLI**
+Navigate to the project directory and execute the code : mvn clean test
+
+
+**Running Tests on different browser**
+
+\src\main\resources\config\AmsConfig.properties
+Change the browser type to below in the above mentioned config file for running on different browser:
+Chrome(Currently set)
+Edge
+Firefox
 
 **Running the Tests**
 
