@@ -40,10 +40,13 @@ Junit Cucumber
 Eclipse IDE or any other IDE
 Installation
 
+
 **Clone the repository**
+
 git clone - https://github.com/ChrisiiKeys/NYTimes.git
 
 **Running Tests using CLI**
+
 Navigate to the project directory and execute the code : mvn clean test
 
 
@@ -55,11 +58,13 @@ Chrome(Currently set)
 Edge
 Firefox
 
+
 **Running the Tests**
 
 Open the Project folder in Git
 Navigate to src/test/java and open the org.runner package.
 Open the TestRunner.java class and Run the Test file.
+
 
 **Test Case Overview**
 
