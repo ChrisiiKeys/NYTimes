@@ -33,6 +33,7 @@ src/test/resources contains Test Data file , Feature File, Report, Screenshots
 pom.xml is a Maven project file for managing dependencies.
 
 **Pre-requisites**
+
 Java Development Kit (JDK)
 Maven
 Junit Cucumber
