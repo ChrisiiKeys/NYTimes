@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="44.137">
+    <testcase classname="NewyorkTimes Automation" name="The user is logging in into the page" time="12.358">
+        <failure message="Unable to obtain: Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--remote-allow-origins=*], extensions: []}}" type="org.openqa.selenium.remote.NoSuchDriverException"><![CDATA[Given The user navigates to the Login page..................................failed
+When The user enter the email id and password...............................skipped
+Then The user is clicking the Login button..................................skipped
+And The user is redirected to the homepage..................................skipped
+
+StackTrace:
+org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--remote-allow-origins=*], extensions: []}}
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:29)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:59)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:47)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:43)
+	at org.utility.BaseClass.browserLaunch(BaseClass.java:31)
+	at org.stepdefinition.Steps.the_user_navigates_to_the_login_page(Steps.java:21)
+	at ✽.The user navigates to the Login page(file:///C:/Users/kchristopher/eclipse-workspace/NewYorkTimesProject/src/test/resources/Feature/NYtimes.feature:5)
+Caused by: org.openqa.selenium.WebDriverException: Unsuccessful command executed: [C:\Users\KCHRIS~1\AppData\Local\Temp\selenium-manager1607396188590002330173384801090134\selenium-manager.exe, --browser, MicrosoftEdge, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_129_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:130)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:251)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:27)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:59)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:47)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:43)
+	at org.utility.BaseClass.browserLaunch(BaseClass.java:31)
+	at org.stepdefinition.Steps.the_user_navigates_to_the_login_page(Steps.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:530)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:758)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:453)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+]]></failure>
+    </testcase>
+    <testcase classname="NewyorkTimes Automation" name="The user is navigating to the elections page" time="11.787">
+        <failure message="Unable to obtain: Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--remote-allow-origins=*], extensions: []}}" type="org.openqa.selenium.remote.NoSuchDriverException"><![CDATA[Given The user navigates to the Login page..................................failed
+When The user enter the US..................................................skipped
+Then The user is clicking the Elections.....................................skipped
+And The article regarding the Elections should be shown.....................skipped
+
+StackTrace:
+org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--remote-allow-origins=*], extensions: []}}
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:29)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:59)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:47)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:43)
+	at org.utility.BaseClass.browserLaunch(BaseClass.java:31)
+	at org.stepdefinition.Steps.the_user_navigates_to_the_login_page(Steps.java:21)
+	at ✽.The user navigates to the Login page(file:///C:/Users/kchristopher/eclipse-workspace/NewYorkTimesProject/src/test/resources/Feature/NYtimes.feature:12)
+Caused by: org.openqa.selenium.WebDriverException: Unsuccessful command executed: [C:\Users\KCHRIS~1\AppData\Local\Temp\selenium-manager1607396188590002330173384801090134\selenium-manager.exe, --browser, MicrosoftEdge, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_129_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:130)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:251)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:27)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:59)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:47)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:43)
+	at org.utility.BaseClass.browserLaunch(BaseClass.java:31)
+	at org.stepdefinition.Steps.the_user_navigates_to_the_login_page(Steps.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:530)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:758)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:453)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+]]></failure>
+    </testcase>
+    <testcase classname="NewyorkTimes Automation" name="The user is navigating to the world page" time="0.032">
+        <failure message="Cannot invoke &quot;org.pom.Pages.getContinueBtn()&quot; because &quot;this.p&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given The user navigates to the world page..................................failed
+Then The user is clicking the Canada........................................skipped
+And The article regarding the Canada should be displayed....................skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "org.pom.Pages.getContinueBtn()" because "this.p" is null
+	at org.stepdefinition.Steps.the_user_navigates_to_the_world_page(Steps.java:73)
+	at ✽.The user navigates to the world page(file:///C:/Users/kchristopher/eclipse-workspace/NewYorkTimesProject/src/test/resources/Feature/NYtimes.feature:19)
+]]></failure>
+    </testcase>
+    <testcase classname="NewyorkTimes Automation" name="The user is Searching a context" time="19.45">
+        <failure message="Cannot invoke &quot;org.pom.Pages.getContinueBtn()&quot; because &quot;this.p&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given The user navigates to the Login page..................................passed
+When The user enter the Climate.............................................failed
+Then The user is clicking the Search button.................................skipped
+And The search result should be relevant to th climate......................skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "org.pom.Pages.getContinueBtn()" because "this.p" is null
+	at org.stepdefinition.Steps.the_user_enter_the_climate(Steps.java:92)
+	at ✽.The user enter the Climate(file:///C:/Users/kchristopher/eclipse-workspace/NewYorkTimesProject/src/test/resources/Feature/NYtimes.feature:26)
+]]></failure>
+    </testcase>
+</testsuite>
